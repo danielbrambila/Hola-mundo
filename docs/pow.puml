@@ -1,0 +1,31 @@
+@startuml Pow
+
+class Pow 
+class Juego
+class JuegoPelota
+class Pelota 
+class Comida 
+class Recompensa
+class Moneda 
+class Energia
+class Maximo
+class Medio 
+class Bajo
+class Hambre
+Class Nivel 
+Pow --o Juego
+Juego <-- JuegoPelota
+Pelota --* JuegoPelota
+
+Pow --o Energia
+Energia --> Nivel
+Nivel o--> Maximo 
+Nivel o--> Medio 
+Nivel o--> Bajo
+
+Pow --o Recompensa
+Recompensa --> Moneda
+
+Pow --* Hambre
+
+@enduml
