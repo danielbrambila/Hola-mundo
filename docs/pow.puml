@@ -13,6 +13,14 @@ class Medio
 class Bajo
 class Hambre
 Class Nivel 
+Class Pow {
+    -color 
+    -tamano
+    -porcentaje_Salud
++ Duchar
++Comer 
++Cagar
+}
 Pow --o Juego
 Juego <-- JuegoPelota
 Pelota --* JuegoPelota
